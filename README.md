@@ -7,16 +7,16 @@ This project has several task to be performed, divided as follow:
 * step 4
 
 ## Reference code
-[loop_over_dataset.py](loop_over_dataset.py)
+[filter.py](filter.py)
 <br>
-[objdet_pcl.py](objdet_pcl.py)
+[trackmanagement.py](trackmanagement.py)
 <br>
-[objdet_detect.py](objdet_detect.py)
+[association.py](association.py)
 <br>
-[objdet_eval.py](objdet_eval.py)
+[measurements.py](measurements.py)
 
 ## Step 1
-
+In this step I've implemented EKF for a 6D input; in order to do so I've derived the equations and adapted the code from the previous excercise to fit input dimension 
 ![pcl6](Pics/pcl6.png "pcl6") *Preceeding vehicles in a X-junction*
 
 
