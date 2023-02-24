@@ -16,7 +16,7 @@ This project has several task to be performed, divided as follow:
 [measurements.py](measurements.py)
 
 ## Step 1
-In this step I've implemented EKF for a 6D input; in order to do so I've derived the equations and adapted the code from the previous excercise to fit input dimensions.
+In this step I've implemented EKF for Lidar data only; in order to do so I've derived the equations and adapted the code from the previous excercise to fit input dimensions, which is 6D.
 
 ```
 F = np.matrix([[1, 0, 0, dt, 0, 0],
@@ -26,7 +26,17 @@ F = np.matrix([[1, 0, 0, dt, 0, 0],
                [0, 0, 0, 0, 1, 0],
                [0, 0, 0, 0, 0, 1]])
 ```
-
+The formula used to calculate Q is the following one:
+![Q](Pic/Q.png "Q")
+```
+Q = 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0
+    0, 0, 0, q, 0, 0
+    0, 0, 0, 0, q, 0
+    0, 0, 0, 0, 0, q
+```
+Using the already calculated F and Q, the resulting Q(t) is:
 ```
 q = params.q
 dt = params.dt
@@ -40,7 +50,7 @@ Q = np.matrix([[q1, 0, 0, q2, 0, 0],
                [0, q2, 0, 0, q3, 0],
                [0, 0, q2, 0, 0, q3]])
 ```
-The resulting EFK has RMSE is 0.32, which is lower than the request.
+The resulting EFK mean RMSE is 0.32, which is lower than the request.
 
 ![step1](Pic/step1.png "step1")
 <br>
