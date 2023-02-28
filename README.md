@@ -52,9 +52,20 @@ Q = np.matrix([[q1, 0, 0, q2, 0, 0],
 ```
 The resulting EFK mean RMSE is 0.32, which is lower than the request.
 
+<p align="center">
+  <img src="Pic/step1.png"/>
+</p>
+
+<p align="center">
+  <img src="Pic/rmse.png"/>
+</p>
+
+## Step 2
+The aim of the step is to initialize, update (score and or state) and delete tracks. RMSE of the step is shown in the chart below:
+<p align="center">
+  <img src="Pic/rmse_2.png"/>
+</p>
+
 ![step1](Pic/step1.png "step1")
 <br>
 ![rmse](Pic/rmse.png "rmse")
-
-## Step 2
-The aim of the step is to initialize, update and delete tracks.
