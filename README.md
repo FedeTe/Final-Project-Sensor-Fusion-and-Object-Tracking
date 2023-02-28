@@ -63,7 +63,7 @@ The resulting EFK mean RMSE is 0.32, which is lower than the request.
 ## Step 2
 The aim of the step is to initialize, update (score and or state) and delete tracks. RMSE of the step is shown in the chart below:
 <p align="center">
-  <img src="Pic/rmse_2.png"/>
+  <img src="Pic/rmse_s2.png"/>
 </p>
 
 ![step1](Pic/step1.png "step1")
