@@ -61,11 +61,16 @@ The resulting EFK mean RMSE is 0.32, which is lower than the request.
 </p>
 
 ## Step 2
-The aim of the step is to initialize, update (score and or state) and delete tracks. RMSE of the step is shown in the chart below:
+The aim of the step is to initialize, update (score and or state) and delete tracks. In the simulation, track 0 has been detected and shortly after confirmed without losses between frames; RMSE of the step is shown in the chart below:
 <p align="center">
   <img src="Pic/rmse_s2.png"/>
 </p>
 
-![step1](Pic/step1.png "step1")
-<br>
-![rmse](Pic/rmse.png "rmse")
+## Step 3
+In this step I've implemented the association matrix based on Mahalanobis distance with gating technique in order to reduce computational complexity; RMSE of the step is shown in the chart below:
+<p align="center">
+  <img src="Pic/rmse_3.png"/>
+</p>
+
+## Step 4
+he aim of the step is to implement data fusion, adding data from the camera sensor.
