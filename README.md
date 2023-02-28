@@ -75,7 +75,7 @@ In this step I've implemented the association matrix based on Mahalanobis distan
 </p>
 
 ## Step 4
-he aim of the step is to implement data fusion in order to increase performance, adding data from the camera sensor. RMSE of the step is shown in the chart below:
+The aim of the step is to implement data fusion in order to increase performance, adding data from the camera sensor. RMSE of the step is shown in the chart below:
 <p align="center">
   <img src="Pic/rmse_4.png"/>
 </p>
