@@ -56,9 +56,5 @@ The resulting EFK mean RMSE is 0.32, which is lower than the request.
 <br>
 ![rmse](Pic/rmse.png "rmse")
 
-
-```
-b = np.array([0, 1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1, 1e+1, 1e+3, 1e+3, 1e+4, 1e+5, 1e+6, 1e+7])
-hist,bins = np.histogram(lidar_pcl_cpy[:,3], bins=b)
-print(hist)
-```
+## Step 2
+The aim of the step is to initialize, update and delete tracks.
