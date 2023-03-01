@@ -84,3 +84,9 @@ Compared to RMSE of step 3 the overall performance is increased. The following a
 <p align="center">
   <img src="Pic/my_tracking_results.gif"/>
 </p>
+
+## Write-up and comments
+1. The most challenging part was step 1; even though there wasn't a complex algorithm to be implemented, it required me to write down formulas and check matrix  dimensions. 
+2. As demonstrated during the prevoius steps, adding sensor fusion incremented overall performance; it's not safe to rely on a single sensor system (up to now), beacause different sensors have different strengths and weaknesses. Lidar are robust in darkness, works well in rain/snow conditions, has higher spatial reoslution compared to camera but doesn't work well with high reflective objects or sun and doesn't classify object, measure speed as well as camera. Project results show that sensor fusion has increased performance.
+3. Sensor fusion system in real-life applications will face difficulties because of the unpredicted conditions: a system should be able to rely mostly on data from the sensor which is performing better in that scenario. Also complexity, the amount of data to be considered, the computational effort and the time elapsed between sensing and results has to be considered.
+4. Maybe having multiple sensor in other directions could extend the "field of view" of the system. Also, integrating sensor data with maps (from the navigation system for example) could improve performance.
